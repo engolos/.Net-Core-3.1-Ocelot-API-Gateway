@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookApi", "BookApi\BookApi.csproj", "{08094F43-2C77-4BB1-BB60-7C7718CEC3CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorApi", "AuthorApi\AuthorApi.csproj", "{64E1370C-2F4C-4353-83CE-DAEB9302E6E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{D54BE32F-0D48-41FF-AFB9-EF01292EEA6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08094F43-2C77-4BB1-BB60-7C7718CEC3CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08094F43-2C77-4BB1-BB60-7C7718CEC3CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08094F43-2C77-4BB1-BB60-7C7718CEC3CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08094F43-2C77-4BB1-BB60-7C7718CEC3CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E1370C-2F4C-4353-83CE-DAEB9302E6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E1370C-2F4C-4353-83CE-DAEB9302E6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E1370C-2F4C-4353-83CE-DAEB9302E6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E1370C-2F4C-4353-83CE-DAEB9302E6E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54BE32F-0D48-41FF-AFB9-EF01292EEA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54BE32F-0D48-41FF-AFB9-EF01292EEA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54BE32F-0D48-41FF-AFB9-EF01292EEA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54BE32F-0D48-41FF-AFB9-EF01292EEA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF48DE98-8171-449D-898F-E466BC3DBB96}
+	EndGlobalSection
+EndGlobal

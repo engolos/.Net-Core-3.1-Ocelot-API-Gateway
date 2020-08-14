@@ -1,0 +1,49 @@
+﻿{
+  //DownstreamPathTemplate ==> İstekte bulunulan api url'i
+  //DownstreamScheme ==> İstekte bulunulan api protokolü
+  //DownstreamHostAndPorts ==> İstekte bulunulan api host ve port bilgileri
+  //UpstreamPathTemplate ==> Gateway üzerinden istekde bulunulan api url bilgisi
+  //UpstreamHttpMethod ==> İstekte bulunulacak api method tipi
+  "Routes": [
+    //Books
+    {
+      "DownstreamPathTemplate": "/Book/GetBooks",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44391"
+        }
+      ],
+      "UpstreamPathTemplate": "/Books",
+      "UpstreamHttpMethod": ["GET"],
+      "Key": "BooksApiKey"
+    },
+    //Authors
+    {
+      "DownstreamPathTemplate": "/Author/GetAuthors",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44353"
+        }
+      ],
+      "UpstreamPathTemplate": "/Authors",
+      "UpstreamHttpMethod": [ "GET" ],
+      "Key": "AuthorsApiKey"
+    }
+  ],
+  "Aggregates": [
+    {
+      "RouteKeys": [
+        "BooksApiKey",
+        "AuthorsApiKey"
+      ],
+      "UpstreamPathTemplate": "/AuthorswithBooks"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44376"
+  }
+}
